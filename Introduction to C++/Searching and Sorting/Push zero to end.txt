@@ -1,0 +1,15 @@
+void pushZeroesEnd(int *a, int n)
+{
+  	for(int i=0;i<n-1;i++){
+		    	//int max=a[i];
+		    for(int j=i+1;j<n;j++){
+		    if(a[j]!=0){
+		        int temp =a[i];
+		        a[i]=a[j];
+		        a[j]=temp;
+		    }
+		    
+		    
+		    }
+		    
+		}}

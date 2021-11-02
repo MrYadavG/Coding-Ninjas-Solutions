@@ -1,0 +1,24 @@
+void wavePrint(int **a, int m, int n)
+{
+    
+    
+     int count =0;
+ for(int i=0;i<n;i++){
+       if(count==m){
+           count =m;
+            for(int j=count-1;j>=0;j--){
+            
+            cout<<a[j][i]<<" ";
+            count--;
+       } }
+       else if (count==0){
+           count = 0 ;
+            for(int j=count;j<m;j++){
+            
+            cout<<a[j][i]<<" ";
+            count++;
+                
+            } }
+            
+       } }
+     

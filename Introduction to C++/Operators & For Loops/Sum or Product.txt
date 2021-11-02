@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int n,a;
+   // cout<<"Enter your number:"<<endl;
+    //cout<<"Enter choice :";
+    cin>>n;
+    cin>>a;
+    int sum= 0;
+    int pro=1;
+ int t=-1;
+ 
+        for (int i = 1; i <= n; i++) {
+            
+                sum = sum + i;
+        
+                pro = pro * i;
+        
+        
+        }
+     if (a == 1) {
+        cout<<sum; }
+    else if (a == 2) {
+        cout<<pro; }
+        else{
+            cout<<t;
+        }
+    }
+

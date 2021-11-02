@@ -1,0 +1,17 @@
+bool checkPalindrome(char str[]) {
+int i,j;
+    int t;
+    for(t=0;str[t]!='\0';t++){
+        
+    }
+    
+
+for(i=0,j=t-1;i<j;i++,j--){
+    
+    if(str[i]!=str[j]){
+        return 0;
+    }
+ 
+}
+    return 1;
+}

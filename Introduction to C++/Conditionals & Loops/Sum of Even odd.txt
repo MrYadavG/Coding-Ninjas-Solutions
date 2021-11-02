@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+
+int n;
+cin>>n;
+
+
+int sum1=0,sum2=0;
+while(n>0){
+    int a= n%10;
+    n = n/10;
+    if(a%2==0){
+        sum1= sum1 + a;
+        
+    }
+    else{
+        sum2= sum2 +a;
+    }
+}
+cout<<sum1<<"  "<<sum2;
+
+	return 0;
+}

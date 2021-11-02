@@ -1,0 +1,19 @@
+void Leaders(int *a,int n){
+    int t=0;
+    if(n==0){
+        return;
+    } 
+    
+    for(int i=1;i<n;i++){
+    if(a[0]-a[i]<0){
+        t++;
+    }
+    }
+    if(t!=0){
+        Leaders(a+1,n-1);
+    }
+    else{
+        cout<<a[0]<<" ";
+         Leaders(a+1,n-1);
+    }
+}

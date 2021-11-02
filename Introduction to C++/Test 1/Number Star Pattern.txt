@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cin>>n;
+    int x=n;
+    for(int i=1;i<=n;i++){
+        int t=1;
+        int m=x;
+        for(int j=n-i+1;j>=1;j--){
+            cout<<t;
+            t++;
+        }
+        for(int j=i-1;j>=1;j--){
+            cout<<"*";
+        }
+        for(int j=i-1;j>=1;j--){
+            cout<<"*";
+        }
+        for (int j=n-i+1;j>=1;j--){
+            cout<<m;
+            m--;
+        }
+        x--;
+        
+         cout<<endl;
+    }
+	// your code goes here
+	return 0;
+}

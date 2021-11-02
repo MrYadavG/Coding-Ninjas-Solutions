@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+	int n;
+    cin>>n;
+   // int x ;
+   // cin>>x;
+      int count =0;
+    for( int i =1 ; count<n;i++){
+      int t = 3*i +2;
+       
+        if(t%4!=0){
+            cout<<t<<" ";
+            count++; }
+            
+            
+        }
+    }
+

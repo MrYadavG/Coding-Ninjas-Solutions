@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+void findLargest(int **input, int r, int c){
+    if(r==0 && c == 0){
+        cout<<"row"<<" "<<0<<" "<<INT_MIN;
+        return;
+    }
+   	
+    int maxSum = INT_MIN, index = -1;
+    bool isRow = true;
+    for(int i=0; i<r; i++){
+        int rowSum = 0;
+        for(int j=0; j<c; j++){
+            rowSum += input[i][j];
+        }
+        if(rowSum > maxSum){
+            maxSum = rowSum;
+            index = i;
+        }
+    }
+    
+    for(int j=0; j<c; j++){
+        int colSum = 0;
+        for(int i=0; i<r; i++){
+            colSum += input[i][j];
+        }
+        if(colSum > maxSum){
+            isRow = false;
+            maxSum = colSum;
+            index = j;
+        }
+    }
+    
+    if(isRow){
+        cout<<"row"<<" ";
+    }
+    else{
+        cout<<"column"<<" ";
+    }
+    cout<<index<<" "<<maxSum;
+    return;
+}
